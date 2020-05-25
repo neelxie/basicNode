@@ -1,5 +1,6 @@
 var http = require('http');
 var url = require('url');
+var fs = require('fs');
 
 //create a server object:
 http.createServer(function (req, res) {

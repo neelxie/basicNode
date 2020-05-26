@@ -15,6 +15,7 @@ http.createServer(function (req, res) {
   var txt = q.year + " and " + q.month;
   console.log(qq.host); //returns 'localhost:8080'
   console.log(qq.pathname); //returns '/default.htm'
+  console.log(q.search); //returns '?year=2017&month=february'
 
   //end the response
   res.end(txt); 

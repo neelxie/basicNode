@@ -13,6 +13,7 @@ http.createServer(function (req, res) {
   res.write(req.url);
   var q = url.parse(req.url, true).query;
   var txt = q.year + " and " + q.month;
+  console.log(qq.host); //returns 'localhost:8080'
   //end the response
   res.end(txt); 
   //the server object listens on port 8080

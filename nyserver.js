@@ -4,6 +4,8 @@ var fs = require('fs');
 
 //create a server object:
 var adr = 'http://localhost:8080/default.htm?year=2017&month=february';
+var qq = url.parse(adr, true);
+
 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});

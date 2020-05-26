@@ -20,8 +20,6 @@ http.createServer(function (req, res) {
   var qdata = qq.query; //returns an object: { year: 2017, month: 'february' }
   console.log(qdata.month); //returns 'february'
 
-
-
   //end the response
   res.end(txt); 
   //the server object listens on port 8080

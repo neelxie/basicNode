@@ -18,6 +18,8 @@ http.createServer(function (req, res) {
   console.log(qq.search); //returns '?year=2017&month=february'
 
   var qdata = qq.query; //returns an object: { year: 2017, month: 'february' }
+  console.log(qdata.month); //returns 'february'
+
 
 
   //end the response

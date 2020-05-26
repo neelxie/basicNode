@@ -9,7 +9,7 @@ http.createServer(function (req, res) {
   res.write('Remnant Greatest Coder!'); //write a response to the client
   res.write(req.url);
   var q = url.parse(req.url, true).query;
-  var txt = q.year + " " + q.month;
+  var txt = q.year + " and " + q.month;
   //end the response
   res.end(txt); 
   //the server object listens on port 8080

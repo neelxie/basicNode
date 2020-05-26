@@ -14,7 +14,7 @@ http.createServer(function (req, res) {
   var q = url.parse(req.url, true).query;
   var txt = q.year + " and " + q.month;
   console.log(qq.host); //returns 'localhost:8080'
-  console.log(q.pathname); //returns '/default.htm'
+  console.log(qq.pathname); //returns '/default.htm'
 
   //end the response
   res.end(txt); 

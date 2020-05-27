@@ -19,6 +19,7 @@ http.createServer(function (req, res) {
   eventEmitter.on('scream', myEventHandler);
 
   //Fire the 'scream' event:
+  eventEmitter.emit('scream');
 
   fs.readFile(filename, function(err, data) {
     if (err) {

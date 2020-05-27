@@ -8,6 +8,7 @@ var events = require('events');
 http.createServer(function (req, res) {
   var q = url.parse(req.url, true);
   var filename = "." + q.pathname;
+  var eventEmitter = new events.EventEmitter();
   fs.readFile(filename, function(err, data) {
     if (err) {
       res.writeHead(404, {'Content-Type': 'text/html'});

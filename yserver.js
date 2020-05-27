@@ -16,6 +16,7 @@ http.createServer(function (req, res) {
   }
 
   //Assign the event handler to an event:
+  eventEmitter.on('scream', myEventHandler);
 
   fs.readFile(filename, function(err, data) {
     if (err) {

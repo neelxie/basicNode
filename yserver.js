@@ -10,6 +10,9 @@ http.createServer(function (req, res) {
   var filename = "." + q.pathname;
   var eventEmitter = new events.EventEmitter();
   
+  //Create an event handler:
+
+
   fs.readFile(filename, function(err, data) {
     if (err) {
       res.writeHead(404, {'Content-Type': 'text/html'});

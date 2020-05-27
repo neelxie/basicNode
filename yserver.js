@@ -18,6 +18,8 @@ http.createServer(function (req, res) {
   //Assign the event handler to an event:
   eventEmitter.on('scream', myEventHandler);
 
+  //Fire the 'scream' event:
+
   fs.readFile(filename, function(err, data) {
     if (err) {
       res.writeHead(404, {'Content-Type': 'text/html'});

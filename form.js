@@ -5,6 +5,9 @@ var formidable = require('formidable');
 http.createServer(function (req, res) {
   if (req.url == '/fileupload') {
     var form = new formidable.IncomingForm();
+    form.parse(req, function (err, fields, files) {
+      });
+  
   }
   else {
     res.writeHead(200, {'Content-Type': 'text/html'});

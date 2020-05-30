@@ -9,7 +9,9 @@ http.createServer(function (req, res) {
     form.parse(req, function (err, fields, files) {
         var oldpath = files.filetoupload.path;
         var newpath = 'C:/Users/Greatest/' + files.filetoupload.name;
-        fs.rename(oldpath, newpath, function (err) {});
+        fs.rename(oldpath, newpath, function (err) {
+            
+        });
         res.write('File uploaded');
         res.end();
     });

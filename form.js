@@ -10,7 +10,8 @@ http.createServer(function (req, res) {
         var oldpath = files.filetoupload.path;
         var newpath = 'C:/Users/Greatest/' + files.filetoupload.name;
         fs.rename(oldpath, newpath, function (err) {
-            
+            if (err) throw err;
+
         });
         res.write('File uploaded');
         res.end();

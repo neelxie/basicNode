@@ -11,7 +11,7 @@ http.createServer(function (req, res) {
         var newpath = 'C:/Users/Greatest/' + files.filetoupload.name;
         fs.rename(oldpath, newpath, function (err) {
             if (err) throw err;
-            res.write('File uploaded');
+            res.write('File uploaded and moved');
             res.end();
         });
         

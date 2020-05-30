@@ -8,8 +8,7 @@ http.createServer(function (req, res) {
     form.parse(req, function (err, fields, files) {
     res.write('File uploaded');
     res.end();
-      });
-  
+    });
   }
   else {
     res.writeHead(200, {'Content-Type': 'text/html'});

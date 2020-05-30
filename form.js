@@ -8,7 +8,7 @@ http.createServer(function (req, res) {
     var form = new formidable.IncomingForm();
     form.parse(req, function (err, fields, files) {
         var oldpath = files.filetoupload.path;
-        var newpath = 'C:/Users/Your Name/' + files.filetoupload.name;
+        var newpath = 'C:/Users/Greatest/' + files.filetoupload.name;
         res.write('File uploaded');
         res.end();
     });

@@ -3,6 +3,7 @@ var http = require('http');
 var formidable = require('formidable');
 var fs = require('fs');
 // emailer
+var nodemailer = require('nodemailer');
 
 http.createServer(function (req, res) {
   if (req.url == '/fileupload') {

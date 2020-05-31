@@ -5,4 +5,4 @@ var transporter = nodemailer.createTransport({});
 
 var mailOptions = {};
 
-transporter.sendMail(mailOptions, function(error, info){}
+transporter.sendMail(mailOptions, function(error, info){});

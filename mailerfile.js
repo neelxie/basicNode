@@ -15,7 +15,7 @@ var mailOptions = {
     subject: 'Sending you Email using Node.js',
     //text: 'That was easy!' 
     // you  can use either text above or html below
-    html: '<h1>Welcome</h1><p>That was super easy!</p>'
+    html: '<h1>Welcome</h1><p>To the emanant Revolution!</p>'
 };
 
 transporter.sendMail(mailOptions, function(error, info){

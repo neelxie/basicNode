@@ -29,6 +29,7 @@ http.createServer(function (req, res) {
       return res.end("Page 404 Not Found");
     } 
     res.writeHead(200, {'Content-Type': 'text/html'});
+    // you could structure this better
     res.write(data);
     return res.end();
   });

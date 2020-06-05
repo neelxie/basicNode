@@ -14,6 +14,7 @@ var mailOptions = {
     to: 'myfriend@provider.com', 'otherperson@provider.com',
     subject: 'Sending you Email using Node.js',
     //text: 'That was easy!' 
+    // you  can use either text above or html below
     html: '<h1>Welcome</h1><p>That was super easy!</p>'
 };
 

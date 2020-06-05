@@ -21,6 +21,7 @@ var mailOptions = {
 transporter.sendMail(mailOptions, function(error, info){
     // You could do more here than just console log
     if (error) {
+        // incase of an error display it
         console.log(error);
     } else {
         console.log('Email has been sent: ' + info.response);

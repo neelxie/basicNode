@@ -13,6 +13,7 @@ http.createServer(function (req, res) {
 
   //Create an event handler:
   var myEventHandler = function () {
+    // you can add what you want handled here
     console.log('I hear a scream!');
   }
 

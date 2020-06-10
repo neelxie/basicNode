@@ -4,6 +4,7 @@ working with Node JavaScript.
 This was created for my personal try-outs. It contains a lot of important stuff.
 
 #### CREDITS
-
+ To GOD be the Glory
+ 
 #### Author
 The Greatest -- Neelxie ** Derek **
